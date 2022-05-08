@@ -69,3 +69,13 @@ for(i = 0; i < animalsToAdopt.length; i++) {
 
 /* Step 4: Create a for loop, for each element of the array, 
  call the function createCard with the corresponding parameter */
+
+
+let buttons = document.querySelectorAll(".card-button");
+
+buttons.forEach(element => {
+  element.addEventListener("click", function play() {
+    let sound = document.getElementById("catSound");
+    sound.play();
+  })
+});
